@@ -3,15 +3,15 @@ require 'templates/header.php';
 include 'functions/funtion_tambahdetailtransaksi.php';
 
 $idbarang=getAllBarangID();
-var_dump($idbarang);
+//var_dump($idbarang);
 $idtransaksi=getAllTransaksiID();
 echo"<br>";
-var_dump($idtransaksi);
+//var_dump($idtransaksi);
 
 ?>
 <div class="m-4">
 
-<h1>tambah data barang master</h1>
+<h1>tambah detail transaksi</h1>
 
 <div class="m-3">
 
