@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2024 at 08:57 PM
+-- Generation Time: Nov 06, 2024 at 03:41 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -49,8 +49,7 @@ INSERT INTO `barang` (`id`, `kode_barang`, `nama_barang`, `harga`, `stok`, `supp
 (6, 'BRG008', 'Spidol', 5000, 250, 2),
 (7, 'BRG009', 'Tas Ransel', 100000, 20, 1),
 (8, 'BRG010', 'Buku Bahasa Inggris', 30000, 80, 1),
-(9, 'BRG011', 'Buku Sejarah', 35000, 120, 1),
-(10, 'BRG012', 'Pensil Warna', 15000, 150, 2);
+(9, 'BRG011', 'Buku Sejarah', 35000, 120, 1);
 
 -- --------------------------------------------------------
 
@@ -159,7 +158,11 @@ INSERT INTO `transaksi` (`id`, `waktu_transaksi`, `keterangan`, `total`, `pelang
 (7, '2023-11-28', 'Pembelian buku anak', 45000, 2),
 (8, '2023-11-29', 'Pembelian buku novel', 30000, 3),
 (9, '2023-11-30', 'Pembelian alat lukis', 75000, 4),
-(10, '2023-12-01', 'Pembelian buku pelajaran', 55000, 5);
+(10, '2023-12-01', 'Pembelian buku pelajaran', 55000, 5),
+(11, '2024-11-21', 'sip', 10000, 1),
+(12, '2024-11-21', 'sip', 10000, 1),
+(13, '2024-11-21', 'sip', 10000, 1),
+(14, '2024-11-21', 'sip', 10000, 1);
 
 -- --------------------------------------------------------
 
@@ -180,21 +183,22 @@ CREATE TABLE `transaksi_detail` (
 --
 
 INSERT INTO `transaksi_detail` (`id`, `transaksi_id`, `barang_id`, `harga`, `qty`) VALUES
-(91, NULL, NULL, 25000, 1),
-(92, NULL, NULL, 2000, 10),
-(93, NULL, NULL, 30000, 1),
-(94, NULL, NULL, 2000, 5),
-(95, NULL, NULL, 1000, 5),
-(96, NULL, NULL, 100000, 1),
-(97, NULL, NULL, 35000, 1),
-(98, NULL, NULL, 3000, 20),
-(99, NULL, NULL, 5000, 10),
-(100, NULL, NULL, 30000, 1),
-(101, NULL, NULL, 25000, 1),
-(102, NULL, NULL, 2000, 5),
-(103, NULL, NULL, 100000, 1),
-(104, NULL, NULL, 35000, 1),
-(105, NULL, NULL, 3000, 20);
+(106, 1, 1, 50000, 2),
+(107, 1, 2, 20000, 1),
+(108, 2, 1, 50000, 3),
+(109, 2, 3, 15000, 5),
+(110, 3, 2, 20000, 4),
+(111, 3, 4, 10000, 2),
+(112, 4, 5, 75000, 1),
+(113, 4, 1, 50000, 2),
+(114, 5, 3, 15000, 3),
+(115, 5, 2, 20000, 6),
+(116, 5, 1, 3000, 2),
+(117, 5, 7, 100000, 3),
+(118, 8, 7, 100000, 5),
+(119, 6, 1, 3000, 1),
+(121, 14, 2, 5000, 2),
+(122, 1, 5, 10000, 1);
 
 -- --------------------------------------------------------
 
@@ -305,13 +309,13 @@ ALTER TABLE `supplier`
 -- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `transaksi_detail`
 --
 ALTER TABLE `transaksi_detail`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=106;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=123;
 
 --
 -- AUTO_INCREMENT for table `user`
