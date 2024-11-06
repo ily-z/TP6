@@ -1,6 +1,6 @@
 <?php
 require 'templates/header.php';
-include 'function.php';
+include 'functions/function_tambahsupplier.php';
 
 ?>
 <div class="m-4">

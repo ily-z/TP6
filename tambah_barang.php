@@ -1,6 +1,6 @@
 <?php
 require 'templates/header.php';
-include 'function.php';
+include 'functions/function_tambahbarang.php';
 
 $option=getAllSupplierId();
 var_dump($option);
