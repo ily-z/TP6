@@ -8,6 +8,7 @@ $tabeltransaksi_detail=getAllTransaksiDetail();
 ?>
 <a href="tambah_supplier.php"><button type="button" class="btn btn-primary m-4">tambah data suplieer</button></a>
 <a href="tambah_barang.php"><button type="button" class="btn btn-primary m-4">tambah data barang</button></a>
+<a href="report_transaksi.php"><button type="button" class="btn btn-secondary m-4">lihat laporan penjualan</button></a>
 
 <div class="w-2/3">
 <table class="table table-dark table-stripe " >
